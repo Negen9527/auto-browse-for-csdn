@@ -66,7 +66,8 @@ public class ArticleServiceImpl implements IArticleService {
                 articles.add(article);
             }
         }catch (Exception e){
-            e.printStackTrace();
+//            e.printStackTrace();
+            System.out.println(e.getMessage());
         }finally {
             response.close();
         }
@@ -90,7 +91,8 @@ public class ArticleServiceImpl implements IArticleService {
             System.out.println(String.format("%s\t\t\t\tcode=%s", name, response.code()));
             Thread.sleep(10000);
         } catch (Exception e) {
-            e.printStackTrace();
+//            e.printStackTrace();
+            System.out.println(e.getMessage());
         }finally {
             response.close();
         }

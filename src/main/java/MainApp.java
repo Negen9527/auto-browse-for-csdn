@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
  */
 public class MainApp {
     static final String username = "qq_36657751";
-    public static void main(String[] args) throws IOException, InterruptedException {
+    public static void main(String[] args) {
         ArticleServiceImpl articleService = new ArticleServiceImpl();
         List<Article> oldArticles = articleService.getArticleListByUserId(username);
 
